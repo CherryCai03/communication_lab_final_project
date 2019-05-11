@@ -1,0 +1,877 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin:0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: black;
+}
+
+#scene{
+	display: block;
+}
+
+p{
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+
+#title{
+	opacity: 0;
+	width: 100%;
+	height: 30%;
+	font-size: 200px;
+	position: absolute;
+	top: 0%;
+	animation-name: move;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
+@keyframes move{
+	from{
+		top: 0%;
+		opacity: 0;
+	}
+	from{
+		top: 5%;
+		opacity: 1;
+	}
+}
+
+#content{
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	position: absolute;
+	bottom: 12%;
+	left: 31%;
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+b{
+	font-size: 50px;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -1px) rotate(-1deg); }
+	20% { transform: translate(-1px, 0px) rotate(1deg); }
+	30% { transform: translate(1px, 1px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 1px) rotate(-1deg); }
+	60% { transform: translate(-1px, 1px) rotate(0deg); }
+	70% { transform: translate(1px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 1px) rotate(0deg); }
+	100% { transform: translate(1px, -1px) rotate(-1deg); }
+}
+
+#footer{
+	width: 100%;
+	height: 10%;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	position: absolute;
+	left: 1%;
+	bottom: 0%;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#typedText{
+	margin: 10%;
+	color: white;
+	font-size: 100px;
+	position: absolute;
+	top: 17%;
+	font-family: 'Indie Flower', cursive;
+}
+
+#scene0{
+	display: none;
+}
+
+#imgspotLight1, #imgspotLight2{
+	width: 800%;
+	z-index: 1000;
+	position: absolute;
+}
+
+.snow{
+	float: left;
+	width: 10%;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+#scene1{
+	display: none;
+}
+
+
+#imgcandle0, #imgcandle1, #imgcandle2, #imgcandle3, #imgcandle4, #imgcandle5{
+	position: absolute;
+	width: 60%;
+	top: 45%;
+	left: -13%;
+}
+
+#imgcandle0{
+	visibility: hidden;
+}
+
+#imgapple, #imgapple1{
+	/*	opacity: 0;*/
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+
+ /*#imgapple1{
+	visibility: hidden;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	}*/
+
+/*#imgapple2{
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+
+#imggarbage, #imggarbage1{
+	position: absolute;
+	height: 50%;
+	right: 0;
+	bottom: 0;
+}
+
+#imggarbage1 {
+	visibility: hidden;
+	}*/
+
+/*#imgstrawberry{
+	opacity: 0;
+	width: 10%;
+	position: absolute;
+	left: 45%;
+	top: 30%;
+}
+
+#imgstrawberry1, #imgstrawberry2, #imgstrawberry3{
+	visibility: hidden;
+	width: 10%;
+	position: absolute;
+	left: 45%;
+	top: 30%;
+}
+
+#imgstrawberry0{
+	visibility: visible;
+	width: 10%;
+	position: absolute;
+	left: 45%;
+	top: 30%;
+} 
+
+#imgpuddingCup{
+	visibility: hidden;
+	width: 30%;
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	}*/
+
+	#imgstrawberry, #imgstrawberry2{
+		position: absolute;
+		left: 43%;
+		top: 100%;
+		animation-name: raise;
+		animation-duration: 4s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		animation-delay: 7s;
+	}
+
+	#imgstrawberry24{
+		position: absolute;
+		left: 43%;
+		top: 0%;
+		animation-name: raise;
+		animation-direction: reverse;
+		animation-duration: 0.5s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		/*animation-delay: 4s;*/
+	}
+
+	@keyframes raise {
+		from {
+			top: 100%;
+		}
+		to {
+			top: 0%;
+		}
+	}
+
+	#imgstrawberry12{
+		width: 9%;
+		position: absolute;
+		left: 8%;
+		top: 112%;
+		animation-name: raisee;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		animation-delay: 7s;
+	}
+
+	#imgstrawberry124{
+		width: 9%;
+		position: absolute;
+		left: 8%;
+		top: 0%;
+		animation-name: raisee;
+		animation-direction: reverse;
+		animation-duration: 0.5s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		/*  animation-delay: 4s;*/
+	}
+
+	#imgstrawberry1{
+		width: 9%;
+		position: absolute;
+		left: 8%;
+		top: 113.5%;
+		animation-name: raiseee;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		animation-delay: 7s;
+	}
+
+	@keyframes raisee {
+		from {
+			top: 112%;
+		}
+		to {
+			top: 0%;
+		}
+	}
+
+	@keyframes raiseee {
+		from {
+			top: 113.5%;
+		}
+		to {
+			top: 1.5%;
+		}
+	}
+
+	#imgstrawberry32{
+		position: absolute;
+		left: 80%;
+		top: 120%;
+		animation-name: raiseeee;
+		animation-duration: 6s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		animation-delay: 7s;
+	}
+
+	#imgstrawberry324{
+		position: absolute;
+		left: 80%;
+		top: 120%;
+		animation-name: raiseeee;
+		animation-direction: reverse;
+		animation-duration: 0.5s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		/*    animation-delay: 4s;*/
+	}
+
+	#imgstrawberry3{
+		position: absolute;
+		left: 80%;
+		top: 121.5%;
+		animation-name: raiseeeee;
+		animation-duration: 6s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		animation-delay: 7s;
+	}
+
+	@keyframes raiseeee {
+		from {
+			top: 120%;
+		}
+		to {
+			top: 0%;
+		}
+	}
+
+	@keyframes raiseeeee {
+		from {
+			top: 121.5%;
+		}
+		to {
+			top: 1.5%;
+		}
+	}
+
+	.line{
+		background-color: white;
+		width: 100%;
+		height: 0.2%;
+		position: absolute;
+		margin-top: 25%;
+	}
+
+	#lineeee{
+		opacity: 0;
+		animation-name: fadeIn;
+		animation-delay: 5s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+	}
+
+	#imgstrawberryJam {
+		width: 110%;
+		position: absolute;
+		top: 100%;
+		left: 0%;
+		animation: jamUp 4s, jamLeft 0.4s infinite alternate;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+		animation-delay: 1s;
+	}
+
+	@keyframes jamUp {
+		from{
+			top: 100%;
+		}
+		to {
+			top: 50%;
+		}		
+	}
+
+	@keyframes jamLeft {
+		from{
+			left: 0%;
+		}
+		to {
+			left: -10%;
+		}		
+	}
+
+
+	#imgjelly {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop{
+		from{
+			top: 21%;
+		}
+		to{
+			top: 100%;
+		}
+	}
+
+	#imgjelly7 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop7;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop7{
+		from{
+			top: 21%;
+		}
+		to{
+			top: -30%;
+		}
+	}
+
+	#imgjelly1 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop1;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop1{
+		from{
+			left:25%;
+		}
+		to{
+			left: 100%;
+		}
+	}
+
+	#imgjelly6 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop6;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop6{
+		from{
+			left:25%;
+		}
+		to{
+			left: -30%;
+		}
+	}
+
+	#imgjelly2 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop2;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop2{
+		from{
+			top: 21%;
+			left: 25%;
+		}
+		to{
+			top: 100%;
+			left: 100%;
+		}
+	}
+
+	#imgjelly5 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop5;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop5{
+		from{
+			top: 21%;
+			left: 25%;
+		}
+		to{
+			top: -30%;
+			left: -30%;
+		}
+	}
+
+	#imgjelly3 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop3;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop3{
+		from{
+			top: 21%;
+			left: 25%;
+		}
+		to{
+			top: -30%;
+			left: 100%;
+		}
+	}
+
+	#imgjelly4 {
+		width: 51%;
+		position: absolute;
+		left: 25%;
+		top: 21%;
+		animation-name: jellyDrop4;
+		animation-delay: 6s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+
+	}
+
+	@keyframes jellyDrop4{
+		from{
+			top: 21%;
+			left: 25%;
+		}
+		to{
+			top: 100%;
+			left: -30%;
+		}
+	}
+
+/*#imgjelly1{
+	visibility: hidden;
+}
+*/
+/*#imgfriedChicken{
+	visibility: hidden;
+}
+
+#imgbeerCan{
+	display: none;
+	width: 30%;
+	left: 30%;
+	top: 20%;
+	}*/
+
+	#imgtoothbrush {
+		opacity: 0;
+		width: 100%;
+		position: absolute;
+		top: -35%;
+		animation-name: fadeIn;
+		animation-delay: 8s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+/*#imgtoothbrush0, #imgtoothbrush1, #imgtoothbrush2, #imgtoothbrush3 {
+	visibility: hidden;
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	top: 20%;
+	}*/
+
+	#imgleftear, #imgrightear {
+		position: absolute;
+		width: 20%;
+		top: 30%;
+		left: 10%;
+	}
+
+	#imgrightear {
+		left: 70%;
+	}
+
+	#imgcottonStick{
+		opacity: 0;
+		position: absolute;
+		width: 20%;
+		left: 40%;
+		top: 50%;
+		animation-name: fadeIn;
+		animation-delay: 8s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+
+	@keyframes fadeIn{
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeOut{
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+
+	#imgmicrowave{
+		opacity: 0;
+		visibility: visible;
+		position: absolute;
+		left: 30%;
+		top: 25%;
+		animation-name: shake;
+		animation-delay: 3s;
+		animation-duration: 15s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		animation-iteration-count: alternate;
+	}
+
+
+	@keyframes shake {
+		0% { transform: translate(1px, 1px) rotate(0deg); opacity: 0;}
+		10% { transform: translate(-1px, -2px) rotate(-2deg); }
+		20% { transform: translate(-3px, 0px) rotate(2deg); }
+		30% { transform: translate(3px, 2px) rotate(2deg); }
+		40% { transform: translate(1px, -1px) rotate(2deg); }
+		50% { transform: translate(-1px, 2px) rotate(-2deg); }
+		60% { transform: translate(-3px, 1px) rotate(2deg); }
+		70% { transform: translate(3px, 1px) rotate(-2deg); }
+		80% { transform: translate(-1px, -1px) rotate(2deg); }
+		90% { transform: translate(1px, 2px) rotate(2deg); }
+		100% { transform: translate(1px, -2px) rotate(0deg); opacity: 1;}
+	}
+
+	#imgfiredChicken{
+		visibility: hidden;
+		position: absolute;
+		width: 120%;
+		top: 0;
+		left: -10%;
+	}
+
+	#imgfiredChicken1{
+		position: absolute;
+		width: 120%;
+		top: 0;
+		left: -10%;
+	}
+
+	#imgbeerCan{
+		visibility: hidden;
+		position: absolute;
+		width: 120%;
+		top: 0;
+		left: -10%;
+	}
+
+	#imgcandle6{
+		visibility: visible;
+		position: absolute;
+		width: 60%;
+		top: 45%;
+		left: -13%;
+		animation-name: fadeInnew;
+		opacity: 0;
+		animation-duration: 48s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes fadeInnew {
+	0% {
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+	#eye{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 25%;
+		left: 35%;
+		animation-name: fadeInnew;
+		animation-duration: 48s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	#eye1{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 25%;
+		left: 65%;
+		animation-name: fadeInnew;
+		animation-duration: 48s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	#mouth{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 54.5%;
+		animation-name: fadeInnew;
+		animation-duration: 48s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	/*#eye2{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 8%;
+		left: 35%;
+		animation-name: fadeIn;
+		animation-delay: 10s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	#eye3{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 8%;
+		left: 55%;
+		animation-name: fadeIn;
+		animation-delay: 12s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	#eye4{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		animation-name: fadeIn;
+		animation-delay: 15s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+	#eye5{
+		visibility: visible;
+		opacity: 0;
+		position: absolute;
+		top: 55%;
+		left: 70%;
+		animation-name: fadeIn;
+		animation-delay: 20s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+*/
+	#scene2{
+		display: none;
+	}
+
+	#scene3{
+		display: none;
+	}
+
+	#scene4{
+		display: none;
+	}
+
+	#scene5{
+		display: none;
+	}
+
+	#scene6{
+		display: none;
+	}
+
+	#scene7{
+		display: none;
+	}
+
+	#scene8{
+		display: none;
+	}
+
+	#scene9{
+		display: none;
+	}
+
+	#scene10{
+		display: none;
+	}
+
+	#scene11{
+		display: none;
+	}
+	#scene12{
+		display: none;
+		font-size: 100px;
+		color: white;
+		font-family: 'Indie Flower', cursive;
+		position: absolute;
+		top: 8%;
+		left: 8%;
+		margin: 10%;
+		animation-name: fadeIn;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
