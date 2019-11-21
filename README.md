@@ -1,6 +1,6 @@
 # communication_lab_final_project
 
-This is the final project for Machine Learning for New Interface
+This is the final project for Communication Lab
 
 This project was completed by Ruijie (Cherry) Cai (rc3470@nyu.edu) in partial fulfillment of INTM-SHU - 120 Communications Lab , Spring 2018. I certify that the NYU Shanghai Honor Code applies to this project. In particular, I have:
 
