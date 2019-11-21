@@ -2,7 +2,7 @@
 
 This is the final project for Communication Lab
 
-This project was completed by Ruijie (Cherry) Cai (rc3470@nyu.edu) in partial fulfillment of INTM-SHU - 120 Communications Lab , Spring 2018. I certify that the NYU Shanghai Honor Code applies to this project. In particular, I have:
+This project was completed by Ruijie (Cherry) Cai (rc3470@nyu.edu) and Wei Wang (ww1110@nyu.edu) in partial fulfillment of INTM-SHU - 120 Communications Lab , Spring 2018. I certify that the NYU Shanghai Honor Code applies to this project. In particular, I have:
 
 Clearly acknowledged the work and efforts of others when submitting written work as my own. The incorporation of the work of others-including but not limited to their ideas, data, creative expression, and direct quotations (which should be designed with quotation marks), or parephrasing thereof - has been fully and appropriately referenced using notations both in the text and the bibliography.
 
