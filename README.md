@@ -9,3 +9,6 @@ Clearly acknowledged the work and efforts of others when submitting written work
 And I understand that: Submitting the same substaintially similar work in multiple courses, either in the same semester or in a different semester, without the express approval of all instructors is strictly forbidden.
 
 I acknowledge that a failure to abide by NYU Stern Honor Code will result in a failing grade for the project and course.
+
+# Abstract
+For this project, I worked with my teammate Wei Wang and delivered a creative  Internet-based art project called Random. For this project, we used special designed gif and images along with the ASMR sounds to “shut the brain down” during the busy final time. The ASMR sound we used are all recorded in the podcasting room and manipulated later by using Audacity by ourselves. There was a full story-line embedded in this project. While guided by the narrator, users can explore the project by clicking, dragging, hovering using their mouse.
